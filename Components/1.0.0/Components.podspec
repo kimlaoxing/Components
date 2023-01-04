@@ -19,9 +19,14 @@ Pod::Spec.new do |s|
     :tag => "#{s.version}" 
   }
  
-  s.framework = "UIKit"
+  s.framework = 'UIkit'
 
-  s.source_files = "Components/**/*.{h,m}"
+  s.subspec 'SubComponents' do |cs|
+	cs.dependency 'Declayout'
+	cs.dependency 'Toast-Swift'
+  end
+
+  s.source_files = "Components/*/*.swift"
 
   s.swift_version = "5.1"
  
