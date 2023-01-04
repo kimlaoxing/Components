@@ -5,12 +5,6 @@ use_frameworks!
 
 workspace 'Components'
 
-def core_pods
-pod 'Toast-Swift', '~> 5.0.1'
-pod 'Declayout'
-end
-
 target 'Components' do
 project 'Components.project'
-core_pods
 end
