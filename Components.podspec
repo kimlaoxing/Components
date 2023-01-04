@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
     :tag => "#{s.version}" 
   }
  
-  s.framework = "UIKit"
+  s.framework = 'Declayout'
 
   s.source_files = "Components/*/*.swift"
 
