@@ -20,7 +20,12 @@ Pod::Spec.new do |s|
   }
  
   s.framework = 'UIkit'
-  s.dependency 'Declayout', 'Toast-Swift'
+
+  s.subspec 'SubComponents' do |cs|
+	cs.dependency 'Declayout'
+	cs.dependency 'Toast-Swift'
+  end
+
   s.source_files = "Components/*/*.swift"
 
   s.swift_version = "5.1"
