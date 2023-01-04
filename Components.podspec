@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
  
   s.framework = "UIKit"
 
-  s.source_files = "Components/**/*.swift"
+  s.source_files = "Components/**/.swift"
 
   s.swift_version = "5.1"
  
